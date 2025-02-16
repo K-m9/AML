@@ -18,7 +18,7 @@ library(microbenchmark, quietly=TRUE)
 set.seed(42)
 
 # Read in the data and split it into train/test subsets
-credit.card.data = read.csv("creditcard/creditcard.csv")
+credit.card.data = read.csv("creditcard.csv")
 
 train.test.split <- sample(2
 	, nrow(credit.card.data)
@@ -308,3 +308,5 @@ Adv:
 - Deal with large scale data
 - Corporate 
 
+## References
+- [1] https://www.kaggle.com/code/nschneider/gbm-vs-xgboost-vs-lightgbm
